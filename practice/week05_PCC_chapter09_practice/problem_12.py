@@ -13,19 +13,22 @@ class Employee:
     
     def handle_review(self):
         """Prints instruction for code review."""
-        if self.department == 'software' and self.experience == 'senior':
-            print(f"Senior Engineers may review their own code and submit to the Principal.")
-        else:
-            print("Please submit your code to a Senior Engineer for review.")
+        print("Please send your code to a senior engineer for review.")
 
 class SoftwareEngineer(Employee):
     """A special kind of employee."""
     def __init__(self, name, experience):
         """Attributes of a software engineer,
         and attributes rolled over from the parent class."""
-        super().__init__(name, experience)
-        self.deparment = 'software'
-
+        super().__init__(name, experience, 'software')
+    
+    def handle_review(self):
+        """Prints instructions for code review."""
+        if self.experience == 'senior':
+            print("Please submit your code to a Principal for review.")
+        else:
+            Employee.handle_review(self)
+    
 engineer_0 = SoftwareEngineer('hudson lockett', 'senior')
 engineer_0.handle_review()
 
