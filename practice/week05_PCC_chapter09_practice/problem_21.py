@@ -20,10 +20,10 @@ class GeneralProducts:
 
 class DigitalDownloads(GeneralProducts):
     """A special type of product with unique delivery."""
-    def __init__(self, name, price, file_type, sku=None):
+    def __init__(self, name, price, file_type, sku=None): # sets attributes for class
         """Defines existing parameters and builds new ones."""
-        super().__init__(name, price, sku)
-        self.file_type = file_type
+        super().__init__(name, price, sku) # defines attributes for class from parent class
+        self.file_type = file_type # defines attributes unique to child class
     
     def delivery(self):
         """Special delivery method for digital downloads."""
