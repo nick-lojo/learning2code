@@ -15,6 +15,7 @@ class BaseDriver:
         message += f"\n\tName: {self.name.title()}"
         message += f"\n\tNationality: {self.nationality.title()}"
         message += f"\n\tSeason Points: {self.season_points}"
+        print(message)
     
     def add_points(self, place):
         """A method to add points to a driver after winning a race."""
