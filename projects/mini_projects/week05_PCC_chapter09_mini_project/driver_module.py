@@ -7,10 +7,10 @@ class RaceDriver(BD):
         super().__init__(driver_id, team, name, nationality, season_points)
         self.car_number = car_number
      
-    def display_diver(self):
+    def display_driver(self):
          """A special version that includes car number."""
-         super().display_diver()
-         print(f"Car Number: #{self.car_number}")
+         super().display_driver()
+         print(f"\tCar Number: #{self.car_number}")
 
 class ReserveDriver(BD):
     """A special class of base drivers."""
@@ -19,7 +19,7 @@ class ReserveDriver(BD):
         super().__init__(driver_id, team, name, nationality, season_points)
         self.status = status
     
-    def display_diver(self):
+    def display_driver(self):
         """A special version of display driver to show status."""
-        super().display_diver()
-        print(f"Status: {self.status.title()}")
+        super().display_driver()
+        print(f"\tStatus: {self.status.title()}")

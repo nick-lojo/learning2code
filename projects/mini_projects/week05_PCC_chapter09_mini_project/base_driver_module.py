@@ -8,7 +8,7 @@ class BaseDriver:
         self.nationality = nationality
         self.season_points = season_points
     
-    def display_diver(self):
+    def display_driver(self):
         """A method to display details about a driver."""
         message = f"\nDriver ID: {self.driver_id}"
         message += f"\n\tTeam: {self.team.title()}"
@@ -32,4 +32,4 @@ class BaseDriver:
         elif place == '6th':
             self.season_points += 8
         
-        print(f"You now have {self.season_points} points on the season.")
+        print(f"\n{self.name.title()} now has {self.season_points} points on the season.")
