@@ -15,3 +15,14 @@ print(contents)
 
 contents = path.read_text().rstrip()
 print(contents)
+
+# Relative and Absolute File Paths (PCC, pg. 186)
+# Relative path: Python looks relative to where the program is running from.
+# Absolute path: tells Python the exact location on the system, starting from root.
+
+# Relative Path Example (files is in subfolder called_text files)
+# path = Path('text_files.pidigits.txt') # Have to ommit because no folder exists
+
+# Absolute Path Example (full path from system root)
+path = Path('/workspaces/learning2code/lessons/week06_PCC_chapter10/pi_digits.txt')
+
