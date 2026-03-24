@@ -1,0 +1,4 @@
+In Python you can build lists. 
+In Python you can create classes. 
+In Python you can store data in dictionaries. 
+In Python you can do math. 

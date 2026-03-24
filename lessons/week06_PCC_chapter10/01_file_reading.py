@@ -64,3 +64,50 @@ for line in lines:
 
 print(f"{pi_string[:52]}...")
 print(len(pi_string))
+
+# Is Your Birthday Contained in Pi? (PCC, pg. 189)
+# Since pi_string is just a string, we can use 'in' to search it.
+
+birthday = input('Enter your birtday, in the form mmddyy: ')
+if birthday in pi_string:
+    print("Your birthday appears in the first million digits of pi!")
+else:
+    print("Your birthday does not appear in the first million digits of pi.")
+
+# Try It Yourself
+
+# 10-1. Learning Python: Open a blank file in your text editor and write a few
+# lines summarizing what you've learned about Python so far. Start each line
+# with the phrase In Python you can. . . . Save the file as learning_python.txt
+# in the same directory as your exercises from this chapter. Write a program
+# that reads the file and prints what you wrote two times: print the contents
+# once by reading in the entire file, and once by storing the lines in a list
+# and then looping over each line.
+
+python_path = Path('learning_python.txt')
+contents = python_path.read_text()
+print(contents)
+
+lines = contents.splitlines()
+for line in lines:
+    print(line)
+
+# 10-2. Learning C: You can use the replace() method to replace any word in a
+# string with a different word. Read in each line from the file you just
+# created, learning_python.txt, and replace the word Python with the name of
+# another language, such as C. Print each modified line to the screen.
+
+for line in lines:
+    print(line.replace('Python', 'C'))
+
+# 10-3. Simpler Code: The program file_reader.py in this section uses a
+# temporary variable, lines, to show how splitlines() works. You can skip
+# the temporary variable and loop directly over the list that splitlines()
+# returns. Remove the temporary variable from the splitlines() loop earlier
+# in this file, to make it more concise.
+
+path = Path('/workspaces/learning2code/lessons/week06_PCC_chapter10/pi_digits.txt')
+
+contents = path.read_text()
+for line in contents.splitlines():
+    print(line)
