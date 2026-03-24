@@ -26,3 +26,41 @@ print(contents)
 # Absolute Path Example (full path from system root)
 path = Path('/workspaces/learning2code/lessons/week06_PCC_chapter10/pi_digits.txt')
 
+# Accessing a File's Lines (PCC, pg. 187)
+# splitlines() turns the full file string into a list of individual lines.
+# We can then loop over that list to work with each line one at a time.
+
+contents = path.read_text()
+lines = contents.splitlines() # return a list of lines, no newline characters
+for line in lines:
+    print(line)
+
+# Working with a File's Contents (PCC, pg. 187-188)
+# After reading lines into a list, we can build a single string from them.
+# lstrip() removes the whitespace from the LEFT side of each line.
+
+contents = path.read_text()
+lines = contents.splitlines()
+pi_string = ''
+for line in lines:
+    pi_string += line.lstrip() # strips leading spaces before concatenating
+print(pi_string)
+print(len(pi_string))
+
+# Large Files: One Million Digits (PCC, pg. 188-189)
+# The same code works on files of any size -- Python has no inherent data limit.
+# We can use slicing to print only part of a large string.
+
+# Example: if we had a million-digit pi file, we'd print just the first 52
+# characters:
+
+path = Path('pi_million_digits.txt')
+contents = path.read_text()
+
+lines = contents.splitlines()
+pi_string = ''
+for line in lines:
+    pi_string += line.lstrip()
+
+print(f"{pi_string[:52]}...")
+print(len(pi_string))
