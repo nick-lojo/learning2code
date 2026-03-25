@@ -1,10 +1,10 @@
 # learning2code
 
-Self-directed software engineering curriculum — 72-week structured program targeting entry-level SWE roles by Q1 2027.
+Self-directed software engineering curriculum — 72-week structured program.
 
 ## About
 
-Career transition from commercial insurance underwriting to software engineering.
+Building the necessary skills to be a proficient engineer in the AI-era.
 This repository documents every lesson, practice problem, and project built along the way.
 
 **Current Phase:** Phase 1 — Python Fundamentals (Python Crash Course, 3rd Ed.)
@@ -34,7 +34,7 @@ Each chapter has three components:
 |-------|-------|--------|
 | Phase 1 | Python Fundamentals | 🟡 In Progress |
 | Phase 2 | Web Dev + CS Fundamentals | ⬜ Not Started |
-| Phase 3 | Capstone + Job Search | ⬜ Not Started |
+| Phase 3 | Capstone | ⬜ Not Started |
 
 **Chapters complete:** 1–9  
 **Hours logged:** 79+
