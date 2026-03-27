@@ -1,0 +1,3 @@
+Gate A opened at 9:00
+Gate B opened at 9:15
+Gate C opened at 9:30
