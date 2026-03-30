@@ -1,0 +1,3 @@
+Monday: 142 tickets
+Tuesday: 98 tickets
+Wednesday: 211 tickets

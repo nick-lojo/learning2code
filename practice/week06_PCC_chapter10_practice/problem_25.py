@@ -18,7 +18,7 @@ def currency_converter():
     exchange_rate = input('Please provide the exchange rate: ')
 
     try:
-        desired_amount = int(current_amount) * int(exchange_rate)
+        desired_amount = int(current_amount) * float(exchange_rate)
     except ValueError:
         message = '\nPlease make sure you only enter integers for the Current'
         message += ' Amount and the Exchange Rate. Do not enter symbols, i.e.,'
