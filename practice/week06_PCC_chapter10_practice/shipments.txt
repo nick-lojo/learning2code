@@ -1,0 +1,3 @@
+Shipment 1042 departed Chicago warehouse on Monday morning.
+Shipment 1043 arrived Dallas distribution center Tuesday afternoon.
+Shipment 1044 delayed due to weather conditions in Memphis.
