@@ -1,0 +1,17 @@
+––2025 Golf Season Report––
+
+Total Rounds Played: 10
+
+Average Score to Par: 9.0
+
+Best Round: Bethpage Black
+	Date Played: 2025-06-01
+	Score: 3 over par.
+
+Worst Round: Oakmont
+	Date Played: 2025-08-11
+	Score: 20 over par.
+
+Total Rounds Over Par: 10
+Total Even Rounds: 0
+Total Rounds Under Par: 0

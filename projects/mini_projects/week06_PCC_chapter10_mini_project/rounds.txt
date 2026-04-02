@@ -1,0 +1,10 @@
+Pebble Beach,2025-04-10,72,81
+Torrey Pines,2025-05-03,72,77
+Augusta National,2025-05-18,72,88
+Bethpage Black,2025-06-01,71,74
+Whistling Straits,2025-06-22,72,79
+Pinehurst No. 2,2025-07-04,70,73
+TPC Sawgrass,2025-07-19,72,85
+Oakmont,2025-08-11,70,90
+Shinnecock Hills,2025-09-06,70,76
+Chambers Bay,2025-09-27,72,80
