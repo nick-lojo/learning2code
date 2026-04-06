@@ -79,3 +79,70 @@ while True:
 # angle bracket > points to the line that caused the failure
 # E shows the actual error - read this first when debugging
 # don't change the test to make it pass - fix the code instead
+
+# Responding to a Failed Test (PCC, pg.215-216)
+
+# When a test fails, don't change the test - fix the code
+# Changing the test to force a pass breaks the whole point of testing
+# Make middle an optional parameter with a default value of ''
+# Use an if block to build the full name differently depending on
+#   whether a middle name was provided
+
+# def get_formatted_name(first, last, middle=''):  # Commented out so script
+#                                                  # runs. Code lives in
+#                                                  # name_function.py
+#     """Generate a neatly formatted full name."""
+#     if middle:
+#         full_name = f"{first} {middle} {last}"
+#     else:
+#         full_name = f"{first} {last}"
+#     return full_name.title()
+
+# Adding New Tests (PCC, pg. 216-217)
+
+# You can add multiple test functions to the same test file
+# Each function tests ONE specific behavior
+# Two dotes in output = two tests passed
+# Naming test functions clearly tells you exactly what broke
+#   when a test fails
+
+# Code is commented out so script runs. Code lives in test_name_function.py
+
+# def test_first_last_middle_name():
+#     """Do names like 'Wolfgang Amadeus Mozart' work?"""
+#     formatted_name = get_formatted_name(
+#         'wolfgang', 'mozart', 'amadeus')
+#     assert formatted_name == 'Wolfgang Amadeus Mozart'
+
+# Two dots in output = two tests passed
+# Each test function tests ONE specific behavior of the function
+
+# TRY IT YOURSELF
+
+# 11-1. City, Country: Write a function that accepts two parameters:
+# a city name and a country name. The function should return a single
+# string of the form City, Country, such as Santiago, Chile. Store
+# the function in a module called city_functions.py, and save this
+# file in a new folder so pytest won't try to run the tests we've
+# already written.
+# Create a file called test_cities.py that tests the function you
+# just wrote. Write a function called test_city_country() to verify
+# that calling your function with values such as 'santiago' and
+# 'chile' results in the correct string. Run the test, and make sure
+# test_city_country() passes.
+
+# See files in 'tiy_functions' folder
+
+# 11-2. Population: Modify your function so it requires a third
+# parameter, population. It should now return a single string of the
+# form City, Country – population xxx, such as Santiago, Chile –
+# population 5000000. Run the test again, and make sure
+# test_city_country() fails this time.
+# Modify the function so the population parameter is optional. Run
+# the test, and make sure test_city_country() passes again.
+# Write a second test called test_city_country_population() that
+# verifies you can call your function with the values 'santiago',
+# 'chile', and population=5000000. Run the tests one more time, and
+# make sure this new test passes.
+
+# See files in 'tiy_functions' folder
