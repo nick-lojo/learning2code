@@ -57,7 +57,25 @@ while True:
 # call the function with known input, assert the reutrn value matches
 #   what you expect
 
-def test_first_laste_name():
-    """Do names like 'Janis Joplin' work?"""
-    formatted_name = get_formatted_name('janis', 'joplin')
-    assert formatted_name == 'Janis Joplin'
+# def test_first_laste_name(): # Commented out, this actually runs in
+#                              # test_namefunction.py
+#     """Do names like 'Janis Joplin' work?"""
+#     formatted_name = get_formatted_name('janis', 'joplin')
+#     assert formatted_name == 'Janis Joplin'
+
+# Running a Test (PCC, pg. 213-214)
+
+# dot after filename = one test passed
+# [110%] = all collected tests have been run
+# "1 passed" = final confirmation, includes time taken
+# pytest discovers test files by looking for files starting with test_
+
+# A Failing Test (PCC, pg. 214-215)
+
+# if you change a function in a way that breaks existing behavior,
+#   pytest catches it fundamentally
+# F in output = test failed
+# FAILURES section shows exactly which test failed and why
+# angle bracket > points to the line that caused the failure
+# E shows the actual error - read this first when debugging
+# don't change the test to make it pass - fix the code instead
