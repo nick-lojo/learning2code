@@ -83,3 +83,31 @@ class AnonymousSurvey:
 #         assert response in language_survey.responses
 
 # Using Fixtures (PCC, pg. 221-223)
+
+# Problem: we're creating a new AnonymousSurvey instance in every
+#   test function - repetitive and hard to maintain at scale
+# fixture: a function that sets up a resource used by multiple tests
+# @pytest.fixture decorator tells pytest to run this function
+#   automatically and pass its return value to any test function
+#   that lists it as a parameter
+# fixture name must match the parameter name in the test function
+
+# @pytest.fixture # Runs in test_survey.py
+# def language_survey():
+#     """A survey that will be available to test all functions."""
+#     question = "What language did you first learn to speak?"
+#     language_survey = AnonymousSurvey(question)
+#     return language_survey
+
+# def test_store_single_response(language_survey):
+#     """Test that a single response is stored properly."""
+#     language_survey.store_responses('English')
+#     assert 'English' in language_survey.responses
+
+# def test_store_three_responses(language_survey):
+#     """Test that three individual responses as stored properly."""
+#     responses = ['English', 'Spanish', 'Mandarin']
+#     for response in responses:
+#         language_survey.store_responses(response)
+#     for response in responses:
+#         assert response in language_survey.responses
